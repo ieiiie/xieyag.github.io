@@ -78,6 +78,64 @@
     <header>
       
         <div class="icon"></div>
+        <time datetime="2018-01-22T07:59:55.133Z"><a href="/2018/01/22/android自定义View-1-1/">2018-01-22</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2018/01/22/android自定义View-1-1/">android自定义View 1-1</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <hr>
+<h2 id="canvas-darwXXX-与Paint"><a href="#canvas-darwXXX-与Paint" class="headerlink" title="canvas.darwXXX()与Paint"></a>canvas.darwXXX()与Paint</h2><p>canvas和paint主要包括以下几个方法：</p>
+<p>1.Canvas 类下的所有 draw- 打头的方法，例如 drawCircle() drawBitmap()</p>
+<p>2.Paint.setStyle(Style style) 设置绘制模式</p>
+<p>&ensp;&ensp;Paint.setColor(int color) 设置颜色</p>
+<p>&ensp;&ensp;Paint.setStrokeWidth(float width) 设置线条宽度</p>
+<p>&ensp;&ensp;Paint.setTextSize(float textSize) 设置文字大小<br>Paint.setAntiAlias(boolean aa) 设置抗锯齿开关</p>
+<hr>
+<h2 id="canvas-drawColor-ColorInt-int-color-方法"><a href="#canvas-drawColor-ColorInt-int-color-方法" class="headerlink" title="canvas.drawColor(@ColorInt int color);方法"></a>canvas.drawColor(@ColorInt int color);方法</h2><p>drawColor 这个方法指在绘制区域填充指定的颜色.<br>example:canvas.drawColor(Color.Black);把整个区域填充成黑色</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">canvas.drawColor(Color.Black)//填充黑色</span><br></pre></td></tr></table></figure>
+<p><img src="1.png" alt=""></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">canvas.drawColor(Color.parse(&quot;#88880000&quot;)//填充半透明红色</span><br></pre></td></tr></table></figure>
+<p><img src="2.png" alt=""></p>
+<p>类似的方法还有 drawRGB(int r, int g, int b) 和 drawARGB(int a, int r, int g, int b) ，它们和  drawColor(color) 只是使用方式不同，作用都是一样的。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">canvas.drawRGB(255,0,0)</span><br><span class="line">canvas.drawARGB(100,200,100,100)</span><br></pre></td></tr></table></figure></p>
+<p>这类颜色填充方法一般用于在绘制之前设置底色，或者在绘制之后为界面设置半透明蒙版。</p>
+
+      
+    </div>
+    <footer>
+            
+        
+                
+      
+
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+  <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
         <time datetime="2018-01-21T10:41:08.283Z"><a href="/2018/01/21/hello-world/">2018-01-21</a></time>
       
       
